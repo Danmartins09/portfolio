@@ -7,10 +7,6 @@
           box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-}
-
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -187,7 +183,7 @@ p {
 
 .navbar img {
   height: 40px;
-  margin: 0 2rem 0 0;
+  margin: 0 2rem;
 }
 
 .navbar .brand__container {
@@ -238,81 +234,6 @@ p {
 
 .navbar .links button {
   padding: .5rem;
-}
-
-.navbar .links button a {
-  color: white;
-}
-
-.show {
-  opacity: 1 !important;
-  visibility: visible !important;
-  right: 0 !important;
-}
-
-.responsive__navbar {
-  position: fixed;
-  top: 0;
-  right: -350px;
-  height: 100%;
-  width: 70%;
-  background-color: black;
-  z-index: 100;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
-  color: white;
-  padding: 3rem 0;
-}
-
-.responsive__navbar .brand {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 2rem;
-}
-
-.responsive__navbar .brand h2 {
-  font-size: 1.2rem;
-}
-
-.responsive__navbar .brand h2 span {
-  margin-left: 0.5rem;
-  font-size: 1.2rem;
-  letter-spacing: 0.1rem;
-  color: #8c2ced;
-}
-
-.responsive__navbar .links ul {
-  margin: 2vw;
-}
-
-.responsive__navbar .links ul li {
-  margin: 2vh;
-  font-size: 2.5vh;
-  cursor: pointer;
-}
-
-.responsive__navbar .links ul li a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.responsive__navbar .links ul ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .hero {
@@ -807,6 +728,9 @@ footer .section .tags li:hover {
 }
 
 @media screen and (min-width: 280px) and (max-width: 1080px) {
+  body {
+    overflow-x: hidden;
+  }
   .defaultMargin {
     margin: 0 10vw;
   }

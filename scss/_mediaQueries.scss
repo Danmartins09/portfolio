@@ -1,4 +1,8 @@
 @media screen and (min-width: 280px) and (max-width: 1080px) {
+  body {
+    overflow-x: hidden;
+  }
+  
   .defaultMargin {
     margin: 0 10vw;
   }
