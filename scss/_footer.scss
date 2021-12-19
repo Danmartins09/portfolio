@@ -24,8 +24,7 @@ footer {
         }
       }
       button {
-        margin-top: 1rem;
-        box-shadow: 2px 1000px 1px #181818 inset;
+        margin-top: 1rem;        
       }
       ul {
         display: flex;
@@ -40,23 +39,7 @@ footer {
             cursor: pointer;
           }
         }
-      }
-      .tags {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        li {
-          padding: 0.5rem;
-          border: 1px solid rgb(129, 128, 128);
-          width: max-content;
-          &:hover {
-            color: white !important;
-            @include gradientText;
-          }
-        }
-      }
+      }      
     }
   }
   

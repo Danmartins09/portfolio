@@ -1,39 +1,54 @@
-.hero{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    overflow:  hidden;
-    height: 60vh;
-    .content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 2rem;
-        .title {
-            h1 {
-                @include gradientText;
-                font-size:  6vw;
-            }
-        }
-    }
-    .image {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        img{
-            position: absolute;
-            bottom: 0;
-            height: 80%;
-            width: 80%;
-            object-fit:contain;
+.hero {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  overflow: hidden;
+  height: 60vh;
 
-        }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    .title {
+      h1 {
+        @include gradientText;
+        font-size: 6vw;
+      }
     }
+  }
+  .image {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      animation: animate 2s ease-in-out infinite alternate-reverse both;
+      img{
+          position: absolute;
+          bottom: 0;
+          height: 80%;
+          width: 80%;
+          object-fit:contain;
+      }
+  }
 
-    button {
-        font-family: 'Roboto', sans-serif;
-        font-size: 1rem;
-        font-weight: bold;
-        letter-spacing: .05rem;        
-    }
+  @keyframes animate{
+    0% {
+      transform: translateY(10px);
+  }
+  100% {
+      transform: translateY(-10px);
+  }
+
+  }
+
+  button {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+  }
 }

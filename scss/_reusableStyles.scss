@@ -19,6 +19,11 @@ button {
     gap: 1rem;
     align-items: center;
     cursor: pointer;
+    transition: .3s ease;
+    &:hover{
+      box-shadow: 2px 1000px 1px #3a1262 inset;
+      
+    }
 }
 
 .title__container {
@@ -29,6 +34,7 @@ button {
     text-align: center;
     h2 {
       color: white;
+      margin-bottom: 1rem;
     }
     p {
       color: rgb(153, 153, 153);
@@ -79,7 +85,7 @@ button {
   }
   
   h3 {
-    color: white;
+    color: white;    
   }
   p {
     color: rgb(129, 128, 128);
