@@ -1,3 +1,39 @@
+@media screen and (max-width:1300px) {
+  .portfolio {
+    .container {
+      grid-template-columns: 1fr;
+      .portfolio__container {
+        padding: 1rem;
+        .image {
+          width: 200px;
+          img {
+            &:hover {
+              top: -300%;
+            }
+          }
+        }
+        &.project2 {
+          .image {
+            img {
+              &:hover {
+                top: -95%;
+              }
+            }
+          }
+        }
+        &.project3 {
+          .image {
+            img {
+              &:hover {
+                top: -240%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }  
+}
 @media screen and (min-width: 280px) and (max-width: 1080px) {
   .defaultMargin {
     margin: 0 10vw;
@@ -37,8 +73,9 @@
       justify-content: center;
       img {
         position: initial;
-        height: 70%;
-        width: 70%;
+        height: 45%;
+        width: 45%;
+        margin-top: 1rem;
       }
     }
   }
@@ -53,40 +90,7 @@
       flex-direction: column;
     }
   }
-  .portfolio {
-    .container {
-      grid-template-columns: 1fr;
-      .portfolio__container {
-        padding: 1rem;
-        .image {
-          width: 200px;
-          img {
-            &:hover {
-              top: -300%;
-            }
-          }
-        }
-        &.project2 {
-          .image {
-            img {
-              &:hover {
-                top: -95%;
-              }
-            }
-          }
-        }
-        &.project3 {
-          .image {
-            img {
-              &:hover {
-                top: -240%;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
+  
   .services {
     .container {
       grid-template-columns: 1fr;

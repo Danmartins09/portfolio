@@ -207,9 +207,9 @@ p {
 }
 
 .navbar .brand__container .brand h2 span {
-  margin-left: .5rem;
-  font-size: .9rem;
-  letter-spacing: .1rem;
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
   color: #8c2ced;
 }
 
@@ -239,6 +239,10 @@ p {
   -webkit-text-fill-color: transparent;
 }
 
+.navbar .links ul li i {
+  font-size: 1.5rem;
+}
+
 .navbar .links ul li i:hover {
   background: var(--gradient);
   background-clip: text;
@@ -247,7 +251,7 @@ p {
 }
 
 .navbar .links button {
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .navbar .links button a {
@@ -411,6 +415,10 @@ p {
   font-size: 1rem;
   font-weight: bold;
   letter-spacing: 0.05rem;
+}
+
+.about p {
+  margin-bottom: .5rem;
 }
 
 .about .container {
@@ -825,6 +833,28 @@ footer .section ul li:hover {
   padding: 1rem 14rem;
 }
 
+@media screen and (max-width: 1300px) {
+  .portfolio .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .portfolio .container .portfolio__container {
+    padding: 1rem;
+  }
+  .portfolio .container .portfolio__container .image {
+    width: 200px;
+  }
+  .portfolio .container .portfolio__container .image img:hover {
+    top: -300%;
+  }
+  .portfolio .container .portfolio__container.project2 .image img:hover {
+    top: -95%;
+  }
+  .portfolio .container .portfolio__container.project3 .image img:hover {
+    top: -240%;
+  }
+}
+
 @media screen and (min-width: 280px) and (max-width: 1080px) {
   .defaultMargin {
     margin: 0 10vw;
@@ -879,8 +909,9 @@ footer .section ul li:hover {
   }
   .hero .image img {
     position: initial;
-    height: 70%;
-    width: 70%;
+    height: 45%;
+    width: 45%;
+    margin-top: 1rem;
   }
   .about {
     margin: 0 10vw;
@@ -893,25 +924,6 @@ footer .section ul li:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .portfolio .container {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  .portfolio .container .portfolio__container {
-    padding: 1rem;
-  }
-  .portfolio .container .portfolio__container .image {
-    width: 200px;
-  }
-  .portfolio .container .portfolio__container .image img:hover {
-    top: -300%;
-  }
-  .portfolio .container .portfolio__container.project2 .image img:hover {
-    top: -95%;
-  }
-  .portfolio .container .portfolio__container.project3 .image img:hover {
-    top: -240%;
   }
   .services .container {
     -ms-grid-columns: 1fr;
