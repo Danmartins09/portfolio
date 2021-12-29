@@ -4,6 +4,11 @@
       justify-content: center;
       gap: 4rem;
       .language {
+        h3 {
+          display: flex;
+          justify-content: center;
+          font-weight: normal;
+        }
         img {
           height: 7rem;
           filter: brightness(0) invert(1);

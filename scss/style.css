@@ -250,6 +250,11 @@ p {
   -webkit-text-fill-color: transparent;
 }
 
+.navbar .links ul li img {
+  height: 20px;
+  margin-right: 0;
+}
+
 .navbar .links button {
   padding: 0.5rem;
 }
@@ -365,7 +370,7 @@ p {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 6vw;
+  font-size: 5rem;
 }
 
 .hero .image {
@@ -376,14 +381,14 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  animation: animate 2s ease-in-out infinite alternate-reverse both;
 }
 
 .hero .image img {
   position: absolute;
-  bottom: 0;
-  height: 80%;
+  top: 6rem;
+  max-height: 400px;
   width: 80%;
+  animation: animate 2s ease-in-out infinite alternate-reverse both;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -665,6 +670,16 @@ p {
   gap: 4rem;
 }
 
+.languages .container .language h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: normal;
+}
+
 .languages .container .language img {
   height: 7rem;
   -webkit-filter: brightness(0) invert(1);
@@ -759,7 +774,7 @@ footer {
       grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
   background-color: #181818;
-  padding: 4rem 14rem;
+  padding: 2rem 14rem;
   color: #818080;
 }
 
@@ -770,11 +785,6 @@ footer .section h2 {
   -webkit-text-fill-color: transparent;
   font-size: 3rem;
   margin-bottom: 1rem;
-}
-
-footer .section .title {
-  color: white;
-  margin-bottom: 1.3rem;
 }
 
 footer .section .social {
@@ -788,10 +798,6 @@ footer .section .social {
 
 footer .section .social i {
   font-size: 1.2rem;
-}
-
-footer .section button {
-  margin-top: 1rem;
 }
 
 footer .section ul {

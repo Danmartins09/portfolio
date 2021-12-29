@@ -3,6 +3,7 @@
   grid-template-columns: 50% 50%;
   overflow: hidden;
   height: 60vh;
+  
 
   a {
     text-decoration: none;
@@ -12,12 +13,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: flex-start;    
     gap: 2rem;
     .title {
       h1 {
-        @include gradientText;
-        font-size: 6vw;
+        @include gradientText;        
+        font-size: 5rem;
       }
     }
   }
@@ -25,12 +26,13 @@
       position: relative;
       display: flex;
       justify-content: center;
-      animation: animate 2s ease-in-out infinite alternate-reverse both;
+      
       img{
-          position: absolute;
-          bottom: 0;
-          height: 80%;
+          position: absolute;          
+          top: 6rem;
+          max-height: 400px;
           width: 80%;
+          animation: animate 2s ease-in-out infinite alternate-reverse both;
           object-fit:contain;
       }
   }

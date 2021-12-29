@@ -44,6 +44,10 @@
             @include gradientText;
           }
         }
+        img {
+          height: 20px;
+          margin-right: 0;
+        }
       }
     }
     button {
