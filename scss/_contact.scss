@@ -1,7 +1,7 @@
 .contact {
     display: flex;
-    margin: 4rem 20rem;
-    gap: 3rem;    
+    margin: 4rem 14rem;
+    justify-content: space-between;        
     .left {
       .title {
         align-items: flex-start;
@@ -10,6 +10,10 @@
           width: 5rem;
           background: var(--gradient);
           margin-bottom: 1rem;
+          
+        }
+        p {
+          text-align: left;
         }
       }
       .title__container {

@@ -30,3 +30,19 @@ responsiveToggle.addEventListener("click", (e) => {
   e.stopPropagation();
   responsiveNavbar.classList.toggle("show");
 });
+
+// const icons = document.querySelectorAll(".links img");
+
+// function activeIcon(event){
+//   event.preventDefault();
+//   icons.forEach((img,index) => {    
+//     icons[index].classList.remove('ativo')
+//   });
+//   event.currentTarget.classList.add('ativo');
+// }
+
+// icons.forEach((img) => {
+//   img.addEventListener('click', activeIcon)
+// });
+
+
