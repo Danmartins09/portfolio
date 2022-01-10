@@ -14,6 +14,16 @@
       padding: 2rem;
       text-align: center;
 
+      a{
+        i {
+          font-size: 1.5rem;          
+          margin: 0 2rem;
+          &:hover {
+            @include gradientText;
+          }
+        }
+      }
+
       .image {
         display: block;
         width: 250px;
@@ -60,7 +70,7 @@
         .image {
           img {
             &:hover {
-              top: -240%;
+              top: -355%;
             }
           }
         }
