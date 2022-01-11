@@ -2,9 +2,8 @@
   display: grid;
   grid-template-columns: 50% 50%;
   overflow: hidden;
-  height: 60vh;
+  height: 80vh;
   
-
   a {
     text-decoration: none;
     color: white;
@@ -29,10 +28,9 @@
       position: relative;
       display: flex;
       justify-content: center;
+      align-items: center;
       
       img{
-          position: absolute;          
-          top: 6rem;
           max-height: 400px;
           width: 80%;
           animation: animate 2s ease-in-out infinite alternate-reverse both;

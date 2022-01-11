@@ -1,8 +1,8 @@
 .contact {
-    display: flex;
-    margin: 4rem 14rem;
-    justify-content: space-between;        
-    .left {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 4rem 14rem;           
+    .left {      
       .title {
         align-items: flex-start;
         .bar {
@@ -37,7 +37,7 @@
       }      
       
     }
-    .right {
+    .right {      
       img {
         height: 30rem;
         width: 26rem;

@@ -345,7 +345,7 @@ p {
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
   overflow: hidden;
-  height: 60vh;
+  height: 80vh;
 }
 
 .hero a {
@@ -390,11 +390,12 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hero .image img {
-  position: absolute;
-  top: 6rem;
   max-height: 400px;
   width: 80%;
   animation: animate 2s ease-in-out infinite alternate-reverse both;
@@ -715,13 +716,11 @@ p {
 }
 
 .contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   margin: 4rem 14rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .contact .left .title {
@@ -787,7 +786,6 @@ footer {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  gap: 5rem;
   background-color: #181818;
   padding: 2rem 14rem;
   color: #818080;
@@ -960,6 +958,9 @@ footer .section ul li:hover {
             align-items: center;
   }
   .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -970,14 +971,34 @@ footer .section ul li:hover {
   .contact .left .form input {
     padding-right: 10vw;
   }
+  .contact .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .contact .right img {
-    width: 100%;
+    height: 100%;
   }
   footer {
-    padding: 5vw 10vw;
+    padding: 3vw 10vw;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    gap: 10vw;
+    gap: 2vw;
+  }
+  footer .socialRight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1rem;
+  }
+  footer .socialRight .social {
+    margin-top: 0;
   }
   .lower__footer {
     -webkit-box-orient: vertical;
@@ -985,7 +1006,7 @@ footer .section ul li:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    padding: 5vw;
+    padding: 3vw;
     gap: 1rem;
   }
 }
