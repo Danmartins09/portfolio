@@ -2,7 +2,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 4rem 14rem;           
-    .left {      
+    .left {
+      display: flex;
+      flex-direction: column; 
+      justify-content: center;     
       .title {
         align-items: flex-start;
         .bar {
@@ -37,11 +40,12 @@
       }      
       
     }
-    .right {      
+    .right { 
+      display: flex; 
+      justify-content: center;    
       img {
         height: 30rem;
-        width: 26rem;
-        object-fit: cover;
+        width: 26rem;        
       }
     }
     

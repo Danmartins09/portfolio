@@ -253,6 +253,12 @@ p {
 .navbar .links ul li img {
   height: 20px;
   margin-right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navbar .links button {
@@ -723,6 +729,19 @@ p {
   margin: 4rem 14rem;
 }
 
+.contact .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .contact .left .title {
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -774,11 +793,18 @@ p {
   cursor: pointer;
 }
 
+.contact .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .contact .right img {
   height: 30rem;
   width: 26rem;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 footer {
@@ -980,7 +1006,8 @@ footer .section ul li:hover {
             justify-content: center;
   }
   .contact .right img {
-    height: 100%;
+    width: 200px;
+    height: 200px;
   }
   footer {
     padding: 3vw 10vw;
