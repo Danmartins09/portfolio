@@ -584,6 +584,10 @@ p {
   text-align: center;
 }
 
+.portfolio .container .portfolio__container p {
+  min-height: 2.5rem;
+}
+
 .portfolio .container .portfolio__container a i {
   font-size: 1.5rem;
   margin: 0 2rem;
@@ -632,6 +636,14 @@ p {
 
 .portfolio .container .portfolio__container.project3 .image img:hover {
   top: -355%;
+}
+
+.portfolio .container .portfolio__container.project4 .image img:hover {
+  top: -355%;
+}
+
+.portfolio .container .portfolio__container.project5 .image img:hover {
+  top: -65%;
 }
 
 .services .container {

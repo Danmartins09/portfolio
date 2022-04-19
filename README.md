@@ -4,7 +4,7 @@
 </h1>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/danielmartins-9/">
+  <a href="https://www.linkedin.com/in/rafael-martins92/">
   <img alt="Made By" src="https://img.shields.io/static/v1?label=Made%20By&message=Daniel%20Martins&color=blueviolet&style=for-the-badge">
 	</a>
   

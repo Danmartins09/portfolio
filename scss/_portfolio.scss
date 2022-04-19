@@ -13,6 +13,9 @@
       background-color: #181818;
       padding: 2rem;
       text-align: center;
+      p{
+        min-height: 2.5rem;
+      }
 
       a{
         i {
@@ -71,6 +74,24 @@
           img {
             &:hover {
               top: -355%;
+            }
+          }
+        }
+      }
+      &.project4 {
+        .image {
+          img {
+            &:hover {
+              top: -355%;
+            }
+          }
+        }
+      }
+      &.project5 {
+        .image {
+          img {
+            &:hover {
+              top: -65%;
             }
           }
         }
